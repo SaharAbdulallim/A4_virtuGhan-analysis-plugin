@@ -1,0 +1,15 @@
+name: a4-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy<2           # ensure compatibility with rio-tiler & numexpr
+  - pip
+  - pip:
+    - mercantile
+    - rasterio
+    - Pillow
+    - matplotlib
+    - nest_asyncio
+    - virtughan @ git+https://github.com/kshitijrajsharma/virtughan.git#egg=virtughan
+
